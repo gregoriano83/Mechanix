@@ -1,6 +1,6 @@
-#THIS IS THE DJANGO AND VUE3 PROJECT
+# THIS IS THE DJANGO AND VUE3 PROJECT
 
-##CRM
+## CRM
 ```
 CRM Portal - Connects an alternator and starter repair workshop with local car repair shops.
 ```
