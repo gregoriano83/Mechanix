@@ -45,25 +45,25 @@ import axios from 'axios'
         methods: {
             logout(){
                 axios
-                .post('/api/v1/token/logout/')
-                .then(response => {
-                    axios.defaults.headers.common['Authorization'] = ''
+                    .post('/api/v1/token/logout/')
+                    .then(response => {
+                        axios.defaults.headers.common['Authorization'] = ''
 
-                    localStorage.removeItem('token')
+                        localStorage.removeItem('token')
 
-                    this.$store.commit('removeToken')
+                        this.$store.commit('removeToken')
 
-                    this.$router.push('/')
-                })
-                .catch(error => {
-                    if (error.response) {                 
-                        console.log(JSON.stringify(error.response.data))
-                        } else if (error.message) {
-                            console.log(JSON.stringify(error.message))
-                        } else {
-                            console.log(JSON.stringify(error))
-                        }
-                })
+                        this.$router.push('/')
+                    })
+                    .catch(error => {
+                        if (error.response) {                 
+                            console.log(JSON.stringify(error.response.data))
+                            } else if (error.message) {
+                                console.log(JSON.stringify(error.message))
+                            } else {
+                                console.log(JSON.stringify(error))
+                            }
+                    })
             },
             getClient(){
                 axios

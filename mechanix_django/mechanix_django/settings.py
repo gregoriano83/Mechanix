@@ -41,11 +41,11 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.192']
 
 CORS_ALLOWED_ORIGINS = [
-	'http://127.0.0.1:8000',
-    'http://127.0.0.1:8080'
+	'http://192.168.0.192:8000',
+    'http://192.168.0.192:8080'
 ]
 
 REST_FRAMEWORK = {

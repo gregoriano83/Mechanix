@@ -59,7 +59,7 @@
           </div>
 
           <div class="column is-12 has-text-centered">
-             <router-link to="/dashboard/orders" class="button is-info is-size-4 mt-6 mb-6">Rezerwacja naprawy</router-link>
+             <router-link to="/log-in" class="button is-info is-size-4 mt-6 mb-6">Rezerwacja naprawy</router-link>
           </div>
 
         </div>
