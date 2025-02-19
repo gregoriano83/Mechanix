@@ -8,6 +8,9 @@ import Order from '../views/dashboard/Order.vue'
 import EditOrder from '../views/dashboard/EditOrder.vue'
 import AddOrder from '../views/dashboard/AddOrder.vue'
 
+import Client from '@/views/dashboard/Client.vue'
+import ShowClient from '@/views/dashboard/ShowClient.vue'
+import EditClient from '@/views/dashboard/EditClient.vue'
 
 const routes = [
   {
@@ -53,6 +56,30 @@ const routes = [
       path: '/dashboard/orders/add',
       name: 'AddOrder',
       component: AddOrder,
+      meta: {
+        requireLogin: true
+      }
+    },
+    {
+      path: '/dashboard/client',
+      name: 'Client',
+      component: Client,
+      meta: {
+        requireLogin: true
+      }
+    },
+    {
+      path: '/dashboard/clients/:id',
+      name: 'ShowClient',
+      component: ShowClient,
+      meta: {
+        requireLogin: true
+      }
+    },
+    {
+      path: '/dashboard/clients/:id/edit',
+      name: 'EditClient',
+      component: EditClient,
       meta: {
         requireLogin: true
       }

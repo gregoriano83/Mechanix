@@ -14,7 +14,7 @@
                 </div>
                 <div class="navbar-item">
                     <div class="buttons">
-                        <router-link to="/dashboard/clients" class="button is-info">Moje konto</router-link>
+                        <router-link to="/dashboard/client" class="button is-info">Moje konto</router-link>
                     </div>
                 </div>
           </template>
