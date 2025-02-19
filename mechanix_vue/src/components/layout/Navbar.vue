@@ -6,6 +6,19 @@
 
     
         <div class="navbar-end">
+            <template v-if="$store.state.isAuthenticated">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <router-link to="/dashboard/orders" class="button">Zlecenia</router-link>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <router-link to="/dashboard/clients" class="button is-info">Moje konto</router-link>
+                    </div>
+                </div>
+          </template>
+
             <div class="navbar-item">
                 <div class="buttons">
                     <template v-if="!$store.state.isAuthenticated">

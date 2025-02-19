@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignUp from '../views/SignUp.vue'
 import LogIn from '../views/LogIn.vue'
-
+import Orders from '../views/dashboard/Orders.vue'
 
 
 const routes = [
@@ -20,6 +20,14 @@ const routes = [
     path: '/log-in',
     name: 'LogIn',
     component: LogIn
+  },
+  {
+    path: '/dashboard/orders',
+    name: 'Orders',
+    component: Orders,
+    meta: {
+      requireLogin: true
+    }
   },
   {
     path: '/about',
