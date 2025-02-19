@@ -2,7 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignUp from '../views/SignUp.vue'
 import LogIn from '../views/LogIn.vue'
+
 import Orders from '../views/dashboard/Orders.vue'
+import Order from '../views/dashboard/Order.vue'
+import EditOrder from '../views/dashboard/EditOrder.vue'
+import AddOrder from '../views/dashboard/AddOrder.vue'
 
 
 const routes = [
@@ -29,6 +33,30 @@ const routes = [
       requireLogin: true
     }
   },
+  {
+    path: '/dashboard/orders/:id',
+    name: 'Order',
+    component: Order,
+    meta: {
+      requireLogin: true
+      }
+    },
+    {
+    path: '/dashboard/orders/:id/edit',
+    name: 'EditOrder',
+    component: EditOrder,
+    meta: {
+      requireLogin: true
+      }
+    },
+    {
+      path: '/dashboard/orders/add',
+      name: 'AddOrder',
+      component: AddOrder,
+      meta: {
+        requireLogin: true
+      }
+    },
   {
     path: '/about',
     name: 'about',

@@ -8,7 +8,7 @@
             </div>
             
             <div class="column is-12">
-            <router-link :to="{ name:'' }" class="button is-info is-focused my-3 ml-5">Dodaj zlecenie</router-link>
+            <router-link :to="{ name:'AddOrder' }" class="button is-info is-focused my-3 ml-5">Dodaj zlecenie</router-link>
             </div>
             
             <div
