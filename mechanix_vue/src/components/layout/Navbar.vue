@@ -9,7 +9,7 @@
             <div class="navbar-item">
                 <div class="buttons">
                     <template v-if="!$store.state.isAuthenticated">
-                    <router-link to="" class="button is-info"><strong>Współpraca</strong></router-link>
+                    <router-link to="/about" class="button is-info"><strong>Współpraca</strong></router-link>
                     <router-link to="/sign-up" class="button is-success"><strong>Rejestracja</strong></router-link>
                     <router-link to="/log-in" class="button is-light">Zaloguj się</router-link>
                     </template>
